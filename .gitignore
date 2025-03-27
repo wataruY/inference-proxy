@@ -1,0 +1,17 @@
+.env
+.venv
+.pytest_cache
+.ruff_cache
+.mypy_cache
+__pycache__
+.envrc
+.env
+.report.json
+
+*.egg-info
+*.pytest_cache
+
+build
+dist
+
+*.log

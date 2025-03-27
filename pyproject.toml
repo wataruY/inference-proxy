@@ -1,0 +1,35 @@
+[project]
+name = "inference-proxy"
+version = "0.1.0"
+description = "Proxy for inference services"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "asyncio>=3.4.3",
+    "docker>=7.1.0",
+    "fastapi>=0.115.12",
+    "httpx>=0.28.1",
+    "rich>=13.9.4",
+    "rich-click>=1.8.8",
+    "richuru>=0.1.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest-asyncio>=0.26.0",
+    "pytest-icdiff>=0.9",
+    "pytest-json-report>=1.5.0",
+    "pytest-sugar>=1.0.0",
+    "ruff>=0.11.2",
+    "xdoctest>=1.2.0",
+]
+
+[tool.pytest.ini_options]
+asyncio_default_fixture_loop_scope = "function"
+asyncio_default_test_loop_scope = "function"
+
+[tool.uv]
+package = true
+
+[tool.uv.scripts]
+docker = "python main.py docker"
