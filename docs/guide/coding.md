@@ -5,11 +5,40 @@
 このガイドは、「AI推論プロキシサーバー」プロジェクトにおける開発プロセスを円滑に進め、コードの品質と一貫性を保つことを目的としています。主に以下の技術スタックとプラクティスに基づいています。
 
 * **コアライブラリ:** FastAPI, Pydantic, Loguru, Docker SDK for Python
+* **パッケージ管理:** uv
 * **テスト:** pytest, pytest-asyncio, pytest-mock, doctest
 * **バージョン管理:** Git, Conventional Commits
 * **プロジェクト管理:** GitHub Issues, Pull Requests
 
 対象読者は、このプロジェクトの開発に参加する（または将来コードを読む可能性のある）開発者（主にあなた自身）です。
+
+### パッケージ管理
+
+pipではなくuvを使用します。
+
+uvの使用方法は[uvの公式ドキュメント](https://docs.astral.sh/uv/getting-started/installation/)を参照してください。
+
+#### パッケージの追加
+
+```bash
+uv add <package>
+```
+
+#### 開発時のみ使うパッケージ
+
+pytestのプラグインなどは開発時のみ使うパッケージです。
+
+```bash
+uv add -d <package>
+```
+
+#### パッケージの更新
+
+```bash
+uv sync
+```
+
+### テスト
 
 ## 2. コーディングスタイルとドキュメンテーション
 
@@ -19,6 +48,11 @@
 * **PEP 8準拠:** Pythonコードは [PEP 8](https://peps.python.org/pep-0008/) に準拠します。`ruff` や `black` などのフォーマッタ/リンタを利用して自動的に準拠させます。
 * **型ヒント必須:** すべての関数・メソッドの引数と戻り値には型ヒント (`typing`) を付与します。変数への型ヒントも可能な限り付与します。
 * **Docstring必須:** すべての公開モジュール、クラス、関数、メソッドにはDocstringを記述します。
+
+### モジュールの作成
+
+* src以下にモジュールを作成します。
+* モジュールのパスには`__init__.py` を作成します。
 
 ### 2.2. Pydantic
 

@@ -129,7 +129,14 @@ def test_start_service_api_success(client):
 
 ### 3.7. テストの実行
 
-* テストの実行は `pytest` コマンドで実行します。
-* ドキュメントテストも含まれているので、`pytest --xdoctest` で実行します。
-* 特定のテストのみを実行する場合は `pytest -m integration` のようにマーカーを指定します。
-* テストの実行結果は `pytest --cov=src/ai_proxy` で確認できます。
+テストの実行は `pytest` コマンドで実行します。
+
+```bash
+pytest
+```
+
+個別のテストファイルを実行する場合は `pytest tests/unit/test_utils.py` のように指定します。
+
+ドキュメントテストも含まれているので、`pytest --xdoctest` で実行します。
+特定のテストのみを実行する場合は `pytest -m integration` のようにマーカーを指定します。
+テストの実行結果は `pytest --cov=src/ai_proxy` で確認できます。
