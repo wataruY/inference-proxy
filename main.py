@@ -11,7 +11,7 @@ def cli():
 @cli.command(cls=RichCommand)
 @click.option("--name", type=str, default="World")
 @click.option("--age", type=int, default=0)
-def main(name: str, age: int):
+def hello_world(name: str, age: int):
     click.echo(f"Hello {name}!")
     click.echo(f"You are {age} years old!")
 
