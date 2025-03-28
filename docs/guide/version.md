@@ -1,46 +1,46 @@
 ## 4. バージョン管理 (Git)
 
+### Gitコマンドのワークフロー
+
+#### リポジトリの状態の確認
+
+```bash
+git status -s
+```
+
+#### 変更の確認
+
+```bash
+git --no-pager diff path/to/file
+```
+
+#### コミットメッセージの作成
+
+1. edit_fileツールを使用してコミットメッセージを.git/COMMIT_EDITMSGに書き込みます。
+
+2. コミットメッセージを参照してコミットします。
+
+```bash
+git commit -F .git/COMMIT_EDITMSG
+```
+
 ### 4.0. GitHub CLIワークフロー
 
-GitHub CLI (`gh`) を使用してIssueとPull Requestを管理します。
+github mcpを使って管理します
 
-#### Issue管理
+#### 例外
 
-```bash
-# Issue一覧の確認
-gh issue list -R owner/repo
+PRのコメント取得はgithub mcpではうまく動作しないので `gh` クライアントを使って行う
 
-# Issue詳細の確認
-gh issue view <number> -R owner/repo
-
-# Issueの作成
-gh issue create -R owner/repo --title "title" --body "body" --label "label1,label2"
-
-# Issueの更新
-gh issue edit <number> -R owner/repo --add-label "label" --remove-label "label"
-```
-
-#### Pull Request管理
+##### PRのコメント取得
 
 ```bash
-# PR一覧の確認
-gh pr list -R owner/repo
-
-# PR詳細の確認
-gh pr view <number> -R owner/repo
-
-# PRの作成
-gh pr create -R owner/repo --title "title" --body "body" --base main
-
-# PRの更新
-gh pr edit <number> -R owner/repo --add-label "label" --remove-label "label"
+gh pr view 42 --json comments
 ```
-
-各コマンドで `-R owner/repo` は省略可能です。カレントディレクトリがリポジトリ内の場合は自動的に検出されます。
 
 ### 4.1. コミットメッセージ規約
 
-**Conventional Commits** ([仕様](https://www.conventionalcommits.org/)) スタイルに従います。これにより、変更履歴が理解しやすくなり、CHANGELOGの自動生成なども可能になります。
+**Conventional Commits** (@仕様) スタイルに従います。これにより、変更履歴が理解しやすくなり、CHANGELOGの自動生成なども可能になります。
 
 **フォーマット:**
 
@@ -102,21 +102,11 @@ Enable new linting rules and adjust settings in pyproject.toml.
 
 ### 4.3. ブランチ戦略
 
-[プロジェクト計画](/docs/project_plan/project-prep.md)で定義した通り、以下の戦略を基本とします。
+@プロジェクト計画で定義した通り、以下の戦略を基本とします。
 
 * `main`: 安定版（リリース可能な状態）。直接コミットは禁止。
 * `develop` (任意): 開発中の最新版。`feature` ブランチのマージ先。`main` へのマージはリリース時。個人開発では省略し、`main` を直接開発ブランチとしても良い。
 * `feature/xxx` (`feature/123-add-status-api` など): 個別の機能開発やバグ修正を行うブランチ。`develop` (または `main`) から分岐し、完了後にPRを作成してマージする。
-
-### 4.4 コミットコマンド
-
-1. editor_toolを使用してコミットメッセージを.git/COMMIT_EDITMSGに書き込みます。
-
-2. `git commit` コマンドでコミットメッセージを参照してコミットします。
-
-```bash
-git commit -F .git/COMMIT_EDITMSG
-```
 
 ## 5. Issue と Pull Request
 
