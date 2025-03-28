@@ -3,13 +3,22 @@
 ## フェーズ3: MVP開発
 
 - [x] 開発環境の構築
-- [x] 設定ファイルの読み込み
+- [x] 設定ファイルの読み込み [FR-01](/docs/project_plan/mvp.md#fr-01-設定ファイル読み込み)
   - [x] Pydanticモデルの定義 (`src/ai_proxy/settings.py`)
   - [x] YAML読み込み処理の実装
   - [x] バリデーションロジックの実装
   - [x] テストの実装
   - [x] サンプル設定ファイルの作成
-- [ ] 基本的なプロキシ機能の実装
-- [ ] 手動コンテナ管理APIの実装
+- [ ] 基本的なプロキシ機能の実装 [FR-02](/docs/project_plan/mvp.md#fr-02-基本的なプロキシ機能)
+- [ ] コンテナ管理機能の実装
+  - [ ] コンテナ起動API [FR-03](/docs/project_plan/mvp.md#fr-03-fr-04-手動コンテナ管理api-起動停止)
+  - [ ] コンテナ停止API [FR-04](/docs/project_plan/mvp.md#fr-03-fr-04-手動コンテナ管理api-起動停止)
+  - [ ] コンテナ状態取得API [FR-05](/docs/project_plan/mvp.md#fr-05-コンテナ状態取得api)
+- [ ] ログ出力の実装 [FR-06](/docs/project_plan/mvp.md#fr-06-基本的なログ出力)
 - [ ] テストの実装
+  - [ ] ユニットテスト
+  - [ ] 結合テスト
 - [ ] ドキュメントの整備
+  - [ ] README.mdの更新
+  - [ ] APIドキュメントの整備
+  - [ ] 設定ファイルサンプルの整備
