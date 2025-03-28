@@ -1,5 +1,5 @@
 ---
-name: 🐛 バグ報告 (Bug Report)
+name: Bug Report
 about: 動作しない、または期待通りに動作しない問題の報告
 title: "fix: [バグの概要]"
 labels: Type: Bug

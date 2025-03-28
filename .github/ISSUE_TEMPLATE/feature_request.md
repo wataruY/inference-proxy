@@ -1,5 +1,5 @@
 ---
-name: ✨ 機能要望 (Feature Request)
+name: Feature Request
 about: 新しい機能や改善の提案
 title: "feat: [簡潔な機能名]"
 labels: Type: Feature

@@ -1,5 +1,5 @@
 ---
-name: 📖 ドキュメント (Documentation)
+name: Documentation
 about: ドキュメントの追加・修正に関するタスク
 title: "docs: [ドキュメント変更の概要]"
 labels: Type: Documentation
