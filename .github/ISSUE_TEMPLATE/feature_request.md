@@ -1,20 +1,34 @@
 ---
 name: Feature request
 about: Suggest an idea for this project
-title: ''
-labels: ''
+title: 'feat: []'
+labels: 
+  - enhancement
 assignees: ''
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+## 🚀 機能説明 (Description)
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+<!-- この機能が何を解決するのか、どのようなものかを説明してください -->
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+## 👤 ユーザーストーリー / 価値 (User Story / Value)
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+<!--
+As a [ユーザーの種類],
+I want to [実現したいこと],
+so that [得られる価値].
+-->
+
+## ✅ 機能要件 / 受け入れ基準 (Requirements / Acceptance Criteria)
+
+<!--
+この機能が完了したと判断できる具体的な条件をリストアップしてください。
+- [ ] 条件1
+- [ ] 条件2
+- [ ] 条件3
+-->
+
+## 📚 関連情報 (Additional Context)
+
+<!-- スクリーンショット、関連Issue、参考資料などがあれば記述 --> 
