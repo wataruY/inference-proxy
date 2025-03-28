@@ -23,4 +23,4 @@ assignees: ''
 <!-- 具体的な作業内容をリストアップしてください -->
 - [ ] READMEの実行方法を修正
 - [ ] config.example.yamlに新しい設定項目を追加
-- [ ] module.pyの関数のDocstringを修正 
+- [ ] module.pyの関数のDocstringを修正

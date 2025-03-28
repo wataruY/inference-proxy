@@ -1,0 +1,8 @@
+---
+description: 
+globs: test/**/*.py
+alwaysApply: false
+---
+# Testing
+
+[testing.md](mdc:docs/guide/testing.md)

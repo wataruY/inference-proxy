@@ -1,0 +1,14 @@
+---
+description: When you execute version control related task, like commit, post pull request, post issues
+globs: 
+alwaysApply: false
+---
+# VCS Related Task
+
+## Check Healt
+
+for debugging purpose, if you read this document, say "[DEBUG] Loading VCS Related Task.mdc"
+
+## Content
+
+[version.md](mdc:docs/guide/version.md)

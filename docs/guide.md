@@ -311,7 +311,7 @@ def test_start_service_api_success(client):
 
 **フォーマット:**
 
-```
+```text
 <type>(<scope>): <subject>
 <BLANK LINE>
 <body>

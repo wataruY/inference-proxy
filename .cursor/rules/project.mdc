@@ -1,0 +1,44 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Project Documents
+
+## Github Repository
+
+- owner: wataruY
+- repo: inference-proxy
+
+## 概要
+
+[overview.md](mdc:docs/project_plan/overview.md)
+
+## 要求
+
+[requirement.md](mdc:docs/project_plan/requirement.md)
+
+## 設計
+
+[design.md](mdc:docs/project_plan/design.md)
+
+## MVP開発
+
+[mvp.md](mdc:docs/project_plan/mvp.md)
+
+## 進捗管理
+
+以下のファイルで進捗を管理します。
+
+[progress.md](mdc:docs/progress.md)
+
+最初に読み込んでから作業を進行し、タスクが完了した際にマークダウンのチェックリストを更新するようにしてください。
+サブタスクが発生した時は箇条書きを入れ子にして新しいタスクを追加してください。
+
+```markdown
+- [ ] Task 1
+  - [ ] Task A
+  - [ ] Task B
+- [ ] Task 2
+```
+
