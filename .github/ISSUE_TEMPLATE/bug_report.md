@@ -1,39 +1,38 @@
 ---
-name: Bug Report
-about: 動作しない、または期待通りに動作しない問題の報告
-title: "fix: [バグの概要]"
-labels: Type: Bug
+name: Bug report
+about: Create a report to help us improve
+title: ''
+labels: ''
 assignees: ''
+
 ---
 
-## 🐞 バグの説明 (Description)
+**Describe the bug**
+A clear and concise description of what the bug is.
 
-<!-- バグの内容を明確かつ簡潔に説明してください -->
-
-## 🔁 再現手順 (Steps to Reproduce)
-
-<!-- バグを再現させるための具体的な手順を記述してください -->
+**To Reproduce**
+Steps to reproduce the behavior:
 1. Go to '...'
 2. Click on '....'
 3. Scroll down to '....'
 4. See error
 
-## 🤔 期待される動作 (Expected Behavior)
+**Expected behavior**
+A clear and concise description of what you expected to happen.
 
-<!-- 本来、どのように動作すべきだったかを説明してください -->
+**Screenshots**
+If applicable, add screenshots to help explain your problem.
 
-## 💥 実際の動作 (Actual Behavior)
+**Desktop (please complete the following information):**
+ - OS: [e.g. iOS]
+ - Browser [e.g. chrome, safari]
+ - Version [e.g. 22]
 
-<!-- 実際に何が起こったかを説明してください -->
+**Smartphone (please complete the following information):**
+ - Device: [e.g. iPhone6]
+ - OS: [e.g. iOS8.1]
+ - Browser [e.g. stock browser, safari]
+ - Version [e.g. 22]
 
-## 🖥️ 環境 (Environment)
-
-<!-- (任意) バグが発生した環境情報を記述してください (OS, Pythonバージョン, Dockerバージョンなど) -->
-- OS: [e.g. Ubuntu 22.04]
-- Python Version: [e.g. 3.11]
-- Docker Version: [e.g. 24.0]
-- Project Version: [e.g. v0.1.0 or commit hash]
-
-## 📚 関連情報 (Additional Context)
-
-<!-- エラーメッセージ全文、ログ、スクリーンショットなど、問題解決に役立つ情報があれば記述 --> 
+**Additional context**
+Add any other context about the problem here.
