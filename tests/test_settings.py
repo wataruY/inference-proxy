@@ -96,8 +96,8 @@ def test_load_settings_with_env_override(tmp_path, monkeypatch):
     """
     config_path.write_text(config_content)
 
-    monkeypatch.setenv("AI_PROXY_SERVICE_PORT", "9000")
-    monkeypatch.setenv("AI_PROXY_LOG_LEVEL", "DEBUG")
+    monkeypatch.setenv("INFERENCE_PROXY_SERVICE_PORT", "9000")
+    monkeypatch.setenv("INFERENCE_PROXY_LOG_LEVEL", "DEBUG")
 
     settings = load_settings(config_path)
     assert settings.services[0].port == 9000
