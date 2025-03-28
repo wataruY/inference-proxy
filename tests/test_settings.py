@@ -1,7 +1,7 @@
 import pytest
 from pathlib import Path
 from pydantic import ValidationError
-from ai_proxy.settings import (
+from inference_proxy.settings import (
     ServiceSettings,
     LogSettings,
     ApplicationSettings,
