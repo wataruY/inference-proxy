@@ -18,5 +18,5 @@ logging:
   level: INFO # ログレベル (DEBUG, INFO, WARNING, ERROR, CRITICAL)
 
 # 環境変数によるオーバーライド:
-# AI_PROXY_SERVICE_PORT - すべてのサービスのポート番号をオーバーライド
-# AI_PROXY_LOG_LEVEL - ログレベルをオーバーライド 
+# INFERENCE_PROXY_SERVICE_PORT - すべてのサービスのポート番号をオーバーライド
+# INFERENCE_PROXY_LOG_LEVEL - ログレベルをオーバーライド 

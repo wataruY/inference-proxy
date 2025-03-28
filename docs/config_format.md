@@ -30,8 +30,8 @@ Inference Proxyの設定は、YAML形式のファイルで管理されます。�
 
 | 環境変数 | 影響範囲 | 説明 |
 |----------|----------|------|
-| AI_PROXY_SERVICE_PORT | すべてのサービス | すべてのサービスのポート番号をオーバーライド |
-| AI_PROXY_LOG_LEVEL | ログ設定 | ログレベルをオーバーライド |
+| INFERENCE_PROXY_SERVICE_PORT | すべてのサービス | すべてのサービスのポート番号をオーバーライド |
+| INFERENCE_PROXY_LOG_LEVEL | ログ設定 | ログレベルをオーバーライド |
 
 ## 設定例
 ```yaml

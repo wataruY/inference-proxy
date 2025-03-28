@@ -56,12 +56,12 @@ def load_settings(config_path: Path) -> ApplicationSettings:
         config_data = yaml.safe_load(f)
 
     # 環境変数によるオーバーライド
-    if "AI_PROXY_SERVICE_PORT" in os.environ:
-        port = int(os.environ["AI_PROXY_SERVICE_PORT"])
+    if "INFERENCE_PROXY_SERVICE_PORT" in os.environ:
+        port = int(os.environ["INFERENCE_PROXY_SERVICE_PORT"])
         for service in config_data.get("services", []):
             service["port"] = port
 
-    if "AI_PROXY_LOG_LEVEL" in os.environ:
-        config_data["logging"]["level"] = os.environ["AI_PROXY_LOG_LEVEL"]
+    if "INFERENCE_PROXY_LOG_LEVEL" in os.environ:
+        config_data["logging"]["level"] = os.environ["INFERENCE_PROXY_LOG_LEVEL"]
 
     return ApplicationSettings(**config_data)
