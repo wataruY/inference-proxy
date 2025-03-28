@@ -42,3 +42,4 @@ def run_test_docker_container():
 
 if __name__ == "__main__":
     cli()
+    
